@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  padding: 1rem;
+  float: left;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+  text-align: left;
+  display: block;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+pre {
+  background-color: #ddd;
+  padding: .5rem;
+  font-size: .85rem;
+  border-radius: .25rem;
+}
+
+.form-control {
+  margin-bottom: .5rem;
+}
+
+.form-result {
+  margin-top: 1rem;
+}
+
+.footer {
+  background-color: red;
+  bottom: 0;
+  color: #fff;
+  font-size: .85rem;
+  margin: 0 .5rem 0 0;
+  padding: .25rem;
+  position: fixed;
+  width: 100%;
+}
+
+.header {
+  background-color: #00baff;  
+
+  .navbar {
+    padding: .25rem;
+
+    &-brand {
+      padding: 0;
+    }
+
+    &-nav .nav-link {
+      color: rgba(255,255,255,1)
+    }
+  }
+
+  .logo {
+    width: 80px;
+    height: 40px;
+    margin-top: 0;
+    float: left;
+    text-indent: -99999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://files.readme.io/a8a0d25-small-logo-white-bound.png);
+  }
+}
+
+.btn-loggi {
+  background-color: #00baff;
+  border-color: #00baff;
+  color: #FFF;
+  margin-bottom: 1rem;
+
+  &:hover {
+    background-color: #00baff;
+    border-color: #00baff;
+    color: #fff;
+  }
+}
+
+.btn-loading {
+  opacity: 0.7;
+
+  .fas {
+    display: inline-block;
+  }
+
+  &::after {
+    -webkit-font-smoothing: antialiased;
+    animation: fa-spin 2s infinite linear;
+    content: "\f013";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    margin-left: .5rem; 
+  }
+  
+}
+
+.alert {
+  font-size: 14px;
+}
+
+.list-shops {
+  .list-group-item-action {
+    cursor: pointer;
+  }
+}
+
+.step {
+  border-top: 4px solid #ccc;
+  padding-top: 1.4rem;
+  margin-top: 1.4rem;
+  position: relative;
+
+  &::before {
+    -webkit-font-smoothing: antialiased;
+    color: #ccc;
+    content: "\f0d7";
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 45px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    left: 0;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-rendering: auto;
+    top: -12px;
+  }
+}
+
+.other-examples {
+  margin-right: .5rem;
+
+  &:hover {
+    .dropdown-menu {
+      display: block;
+      left: auto;
+      right: 0;
+      top: 28px;
+    }
+  }
+}
+
