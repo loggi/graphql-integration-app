@@ -9,3 +9,7 @@ This repo provides some examples of how to integrate with Loggi's GraphQL endpoi
 - /login
 - /orders
 - /shops
+
+##  Live preview
+
+[https://codesandbox.io/s/github/loggi/graphql-integration-app/](https://codesandbox.io/s/github/loggi/graphql-integration-app/)
