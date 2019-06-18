@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Waypoint } from "react-waypoint";
 
 import Login from "../components/Login";
 import Shops from "../components/Shops";
@@ -6,6 +7,7 @@ import { useStateValue } from "../store";
 
 function ShopsContainer() {
   const [{ loginData }] = useStateValue();
+  const [showHint, setShowHint] = useState(false);
   const {
     data: {
       login: {
@@ -13,6 +15,12 @@ function ShopsContainer() {
       }
     }
   } = loginData;
+
+  useEffect(() => {
+    if (apiKey.length > 0) {
+      setShowHint(true);
+    }
+  }, [apiKey]);
 
   return (
     <div className="content">
@@ -28,6 +36,7 @@ function ShopsContainer() {
       {/* SHOPS */}
       {apiKey.length > 0 && (
         <div className="step">
+          <Waypoint onEnter={() => setShowHint(false)} />
           <div className="alert alert-success">
             <h2>2. Get your shops</h2>
             <p className="mb-0">
@@ -38,6 +47,7 @@ function ShopsContainer() {
           <Shops />
         </div>
       )}
+      {showHint && <div className="action-hint" />}
     </div>
   );
 }

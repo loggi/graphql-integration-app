@@ -7,22 +7,7 @@ import Login from "./routes/Login";
 import Orders from "./routes/Orders";
 import Shops from "./routes/Shops";
 
-import { StateProvider } from "./store";
-
-const initialState = {
-  email: "",
-  loginData: {
-    data: {
-      login: {
-        user: {
-          apiKey: {}
-        }
-      }
-    }
-  },
-  shops: [],
-  shopId: 0
-};
+import { initialState, StateProvider } from "./store";
 
 const reducer = (state, action) => {
   switch (action.type) {

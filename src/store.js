@@ -9,3 +9,18 @@ export const StateProvider = ({ reducer, initialState, children }) => (
 );
 
 export const useStateValue = () => useContext(StateContext);
+
+export const initialState = {
+  email: "",
+  loginData: {
+    data: {
+      login: {
+        user: {
+          apiKey: {}
+        }
+      }
+    }
+  },
+  shops: [],
+  shopId: 0
+};
