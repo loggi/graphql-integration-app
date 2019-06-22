@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+.tmp/
+build/
+coverage/
+dist/
+documentation/
+node_modules/
+npm-debug.*
+reports/
+webpack.stats.json
+yarn.lock
