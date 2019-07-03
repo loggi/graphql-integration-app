@@ -7,6 +7,14 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.scss";
 
+window.loggi = {
+  bootstrapData: {
+    user: {
+      pk: Math.floor(Math.random() * 1000)
+    }
+  }
+};
+
 ReactDOM.render(
   <BrowserRouter>
     <App />
